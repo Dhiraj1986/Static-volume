@@ -1,0 +1,18 @@
+apiVersion : v1
+kind : Pod
+metadata :
+  name : dhiraj-pod
+spec : 
+  volumes :
+  - name : ham-tum-volume
+    persistentVolumeClaim :
+      claimName : dhiraj-pvc
+  containers : 
+  - image : dhiraacr.azurecr.io/photo-uploader:latest
+    name : rajakumar
+    ports :
+    - containerPort : 5000
+    volumeMounts :
+    - mountPath : /app/static
+      name : ham-tum-volume
+
