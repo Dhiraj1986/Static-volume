@@ -1,8 +1,2 @@
-apiVersion : v1
-kind:       Secret
-metadata : 
-  name : sadi-ke-photo-ka-secret-cred
-type : Opaque
-# stringData :
-#   azurestorageaccountname: dhirajstorage
-#   azurestorageaccountkey: 
+# Ignore environment files
+secret.yaml
